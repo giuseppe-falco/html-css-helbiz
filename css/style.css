@@ -13,16 +13,20 @@ a{
   display: inline-block;
 
 }
+/* header{
+  opacity: 0.9;
+} */
 /* header-top */
+
 .header-top{
   position: fixed;
   top:0;
   left:0;
   width: 100%;
-  background-color:rgba(132,132,132,0.7);
-  height: 70px;
-  line-height: 70px;
-  z-index: 1;
+  background-color:#fff;
+  height: 60px;
+  line-height: 60px;
+  z-index: 0;
 }
 
 .logo{
@@ -52,7 +56,7 @@ a{
   color:#fff;
   font-size: 0.8rem;
   font-weight: bold;
-  margin-left: 15px;
+  margin:0 15px;
 }
 
 #eng{
@@ -84,12 +88,34 @@ a{
    top: -20%;
    transform: translate(0, -20%);
    min-width:100%;
-   z-index:-1;
+   z-index:-3;
 }
 
-@media screen and (max-width:1200px){
+.hero-content{
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -30%);
+  color:#fff;
+  text-align: center;
+}
+.hero-content h1{
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-content img{
+  margin-top:20px;
+}
+
+.hero-content img:last-child{
+  margin-left:20px;
+}
+
+@media screen and (max-width:992px){
   .hero-video{
      top: -10%;
-     transform: translate(0, -20%);
+     transform: translate(0, -10%);
   }
 }
