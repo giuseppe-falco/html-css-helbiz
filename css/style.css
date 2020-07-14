@@ -23,8 +23,8 @@ a{
   top:0;
   left:0;
   width: 100%;
-  background-color:#fff;
-  /* opacity: 0.5; */
+  background-color:rgba(244, 244, 244, 0.5);
+  /* opacity: 0.4; */
   height: 60px;
   line-height: 60px;
   z-index: 0;
@@ -44,8 +44,9 @@ a{
   font-size: 0.7rem;
 }
  li a{
-  color:#000;
+  color:#F7FFFF;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .side-menu{
@@ -70,11 +71,12 @@ a{
 /* HERO */
 /* so che manca position a hero ma se lo metto mi si sballa tutto e non mi va di rifare i conti */
 .hero-video{
-   position: absolute;
+   position: relative;
    left: 0;
-   top: -20%;
-   transform: translate(0, -20%);
+   top: 30%;
+   transform: translate(0, -30%);
    min-width:100%;
+   max-width:100%;
    z-index:-3;
 }
 
@@ -87,6 +89,7 @@ a{
   text-align: center;
 }
 .hero-content h1{
+  margin-top:30px;
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: 600;
@@ -117,19 +120,24 @@ a{
   }
 
   .hero-video{
-    top: -10%;
-    transform: translate(0, -10%);
+    top: 0;
+    transform: translate(0, -20%);
   }
 
   .hero-content{
-    position: absolute;
-    top:30%;
+    position: relative;
     left:50%;
-    transform: translate(-50%, -30%);
+    top:50%;
+    transform: translate(-50%, -180%);
   }
 
   .logo{
     margin-left:0;
+  }
+
+  .hero-content h1{
+    margin-top:0;
+    font-size: 30px;
   }
 }
 
@@ -150,14 +158,35 @@ a{
   }
 
   .hero-video{
-    top: -20%;
-    transform: translate(0, -10%);
+    top: 0;
+    transform: translate(0, -35%);
+    max-width: none;
+    max-height: 60%;
   }
 
   .hero-content{
     position: absolute;
-    top:25%;
+    top:30%;
     left:50%;
     transform: translate(-50%, -30%);
   }
+
+  .hero-content h1{
+    margin-top:0;
+    font-size: 30px;
+  }
+
+  .hero-content p{
+    font-size: 14px;
+  }
+
+  .header-top{
+    background-color: #000;
+  }
+
+  .fa-bars{
+    color:#fff;
+  }
 }
+/* MAIN */
+main >
