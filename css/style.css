@@ -225,10 +225,12 @@ a{
   }
 }
 
-
+/* vecchio+smartphone */
+.position{
+  position: relative;
+}
 .vecchietto{
   margin-top: 80px;
-  position: relative;
   /* background-image: url(../img/vecchio.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,6 +245,7 @@ a{
   position: relative;
   transform: translate(-50%, -50%);
 } */
+
 #iphone{
   width:15%;
   position: absolute;
@@ -261,4 +264,137 @@ a{
 
 .vecchietto p{
   margin-top:20px;
+}
+
+.points{
+  width: .5rem;
+  margin-right:1.25rem;
+  height: .5rem;
+  border-width: 1px;
+  border-radius: 9999px;
+  background-color:#fff;
+  border:1px solid #000;
+
+  position: absolute;
+  bottom:-20%;
+  left:47%;
+  z-index: 2;
+}
+
+.span-2{
+  margin-left:30px;
+}
+
+.span-3{
+  margin-left:60px;
+}
+
+.span-4{
+  margin-left:90px;
+}
+
+.iphone>[class*="fa-angle"]{
+  position: absolute;
+  top:65%;
+  transform: translate(50%);
+  background: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  border-radius: 50%;
+  /* display: none; */
+  }
+
+.fa-angle-left{
+  padding: 5px 15px 7px 12px;
+  left:33%;
+}
+.fa-angle-right{
+  padding: 5px 12px 7px 15px;
+  left:64%;
+}
+
+.iphone:hover [class*="fa-angle"]{
+  display: block;
+}
+
+
+@media screen and (max-width:1400px){
+
+  .iphone>[class*="fa-angle"]{
+    top:50%;
+  }
+
+  .fa-angle-left{
+    left:29%;
+  }
+
+  .fa-angle-right{
+    left:60%;
+  }
+
+  .points{
+    bottom:-10%;
+    left:46%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .points{
+    bottom:20px;
+    left:45%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .vecchietto{
+    background-image: url(../img/vecchio.jpg);
+    background-size: 300%;
+    height: 500px;
+    background-position: left  ;
+
+  }
+
+  #iphone{
+    position: relative;
+    width:50%;
+    top:0;
+    transform: translate(50%, -70%);
+  }
+  #iphone-pic-1{
+    width:30%;
+    left:50%;
+    transform: translate(-50%, -70%);
+  }
+
+  .iphone>[class*="fa-angle"]{
+    top:45%;
+  }
+
+  .fa-angle-left{
+    left:20%;
+  }
+
+  .fa-angle-right{
+    left:65%;
+  }
+
+  .position h1{
+    position: absolute;
+    top:80%;
+    margin-left: 20px;
+  }
+
+  .position p, .position h3{
+    margin-left: 20px;
+    position: absolute;
+    top: 86%;
+  }
+  .position p{
+    top:91%;
+  }
+
+  .points{
+    top:75%;
+    left:42%;
+  }
 }
