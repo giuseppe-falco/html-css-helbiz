@@ -24,6 +24,7 @@ a{
   left:0;
   width: 100%;
   background-color:#fff;
+  /* opacity: 0.5; */
   height: 60px;
   line-height: 60px;
   z-index: 0;
@@ -31,6 +32,7 @@ a{
 
 .logo{
   height: 12px;
+  margin-left:20px;
 }
 
 .main-menu{
@@ -65,7 +67,41 @@ a{
   padding: 0 10px;
 }
 
-@media screen and (max-width:992px){
+/* HERO */
+/* so che manca position a hero ma se lo metto mi si sballa tutto e non mi va di rifare i conti */
+.hero-video{
+   position: absolute;
+   left: 0;
+   top: -20%;
+   transform: translate(0, -20%);
+   min-width:100%;
+   z-index:-3;
+}
+
+.hero-content{
+  position: absolute;
+  left:50%;
+  top:32%;
+  transform: translate(-50%, -65%);
+  color:#fff;
+  text-align: center;
+}
+.hero-content h1{
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hero-content img{
+  margin-top:30px;
+}
+
+.hero-content img:last-child{
+  margin-left:20px;
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px){
   .fa-bars{
     position: absolute;
     right: 20px;
@@ -79,43 +115,49 @@ a{
     top:50%;
     transform: translate(0, -50%);
   }
-}
 
-/* HERO */
-.hero-video{
-   position: absolute;
-   right: 0;
-   top: -20%;
-   transform: translate(0, -20%);
-   min-width:100%;
-   z-index:-3;
-}
-
-.hero-content{
-  position: absolute;
-  top:30%;
-  left:50%;
-  transform: translate(-50%, -30%);
-  color:#fff;
-  text-align: center;
-}
-.hero-content h1{
-  margin-bottom: 20px;
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.hero-content img{
-  margin-top:20px;
-}
-
-.hero-content img:last-child{
-  margin-left:20px;
-}
-
-@media screen and (max-width:992px){
   .hero-video{
-     top: -10%;
-     transform: translate(0, -10%);
+    top: -10%;
+    transform: translate(0, -10%);
+  }
+
+  .hero-content{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -30%);
+  }
+
+  .logo{
+    margin-left:0;
+  }
+}
+
+@media screen and (max-width:768px){
+
+  .fa-bars{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translate(0, -50%);
+  }
+
+  .logo{
+    position: absolute;
+    left:20px;
+    top:50%;
+    transform: translate(0, -50%);
+  }
+
+  .hero-video{
+    top: -20%;
+    transform: translate(0, -10%);
+  }
+
+  .hero-content{
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -30%);
   }
 }
