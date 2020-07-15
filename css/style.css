@@ -206,6 +206,7 @@ a{
 
 .helbiz-item img:first-child{
   width: 60%;
+  margin-bottom: 30px;
 }
 
 .helbiz-item img:last-child{
@@ -228,6 +229,7 @@ a{
 /* vecchio+smartphone */
 .position{
   position: relative;
+  height: auto;
 }
 .vecchietto{
   margin-top: 80px;
@@ -258,7 +260,7 @@ a{
   transform: translate(-50%, -61.5%);
   z-index: 0;
 }
-.vecchietto h1, .vecchietto h3{
+.position h1, .position h3{
   margin-top:30px;
 }
 
@@ -276,7 +278,7 @@ a{
   border:1px solid #000;
 
   position: absolute;
-  bottom:-20%;
+  top:125%;
   left:47%;
   z-index: 2;
 }
@@ -301,7 +303,7 @@ a{
   opacity: 0.5;
   font-size: 30px;
   border-radius: 50%;
-  /* display: none; */
+  display: none;
   }
 
 .fa-angle-left{
@@ -396,5 +398,88 @@ a{
   .points{
     top:75%;
     left:42%;
+  }
+}
+
+/* blocchi foto */
+.block img{
+  width: 100%;
+}
+.block-hr img{
+  margin-top:250px;
+}
+
+.block > [class*="col-"]{
+  position: relative;
+}
+.block-hr-text{
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(40%, 40%);
+  color:#fff;
+  max-width: 100%;
+  text-align: center;
+}
+
+.block-hr-text h1{
+  line-height: 60px;
+  font-size: 40px;
+}
+
+.block-hr-text p{
+  line-height: 30px;
+  font-size: 20px;
+  margin:25px 0;
+}
+
+.block-hr-text a{
+  font-size: 20px;
+  color:#fff;
+}
+/* block verticali */
+[class*="block-vr"]{
+  margin-top:100px;
+  background: rgb(37,47,56);
+  background: linear-gradient(30deg, rgba(37,47,56,1) 35%, rgba(62,82,101,1) 100%);
+  height: 800px;
+  position: relative;
+}
+
+.block-vr-1 img{
+  width: 50%;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translate(-50%,0);
+}
+
+.block-vr-2 img{
+  height: 100%;
+}
+
+.block-text-vr{
+  position: absolute;
+  top:10%;
+  left:50%;
+  transform: translate(-50%,0);
+  color:#fff;
+  text-align: center;
+  max-width: 100%;
+}
+
+.block-text-vr h1{
+  line-height: 60px;
+  font-size: 40px;
+}
+
+.block-text-vr span{
+  display: inline-block;
+  margin-top:20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width:1400px){
+  .block-hr, .block-vr{
   }
 }
